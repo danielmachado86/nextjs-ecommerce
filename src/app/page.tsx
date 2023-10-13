@@ -25,11 +25,13 @@ export default async function Home() {
             <Link
               href={"/products/" + products[0].id}
               className="btn btn-primary"
-            >Check it out</Link>
+            >
+              Check it out
+            </Link>
           </div>
         </div>
       </div>
-      <div className="my-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+      <div className="my-4 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
         {products.slice(1).map((product) => (
           <ProductCard product={product} key={product.id} />
         ))}

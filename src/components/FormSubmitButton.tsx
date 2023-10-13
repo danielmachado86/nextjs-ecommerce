@@ -18,7 +18,7 @@ export default function FormSubmitButton({
 
   return (
     <button
-    {...props}
+      {...props}
       className={`btn btn-primary ${className}`}
       type="submit"
       disabled={pending}
